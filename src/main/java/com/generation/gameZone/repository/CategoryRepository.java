@@ -6,7 +6,7 @@ import org.springframework.data.repository.query.Param;
 
 import java.util.List;
 
-public interface ProductRepository  extends JpaRepository <Products, Long> {
+public interface CategoryRepository extends JpaRepository <Products, Long> {
 
     public List<Products>findAllBynameContainsIgnoreCase(@Param("name")String name);
 }
